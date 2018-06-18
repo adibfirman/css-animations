@@ -48,15 +48,27 @@ html, body{
   width: 90px;
   animation-name: drive;
   animation-duration: 3.5s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
   animation-iteration-count: infinite;
+}
+
+.luigi {
+  position: absolute;
+  left: 0;
+  width: 90px;
+  bottom: -0px;
+  animation-name: drive;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: reverse;
 }
 
 /*// KEYFRAMES //*/
 
 @keyframes drive {
   from { transform: translateX(-100px) }
-  to { transform: translateX(2500px) }
+  to { transform: translateX(1500px) }
 }
 
 
